@@ -1,0 +1,9 @@
+<h2>Movies</h2>
+<h3><%=@question%></h3>
+<div id="container_posters">
+    <%@movies.each_with_index do |movie, i|%>
+        <a href="/select_answer/<%=i%>">
+            <img class="poster" src="<%=movie.poster%>"/>
+        </a>
+    <%end%>
+</div>
